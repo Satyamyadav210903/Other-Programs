@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Bookstore</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for books...">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#" onclick="filterBooks('Fiction')">Fiction</a></li>
+                <li><a href="#" onclick="filterBooks('Non-Fiction')">Non-Fiction</a></li>
+                <li><a href="#" onclick="filterBooks('Science Fiction')">Science Fiction</a></li>
+                <li><a href="#" onclick="filterBooks('Fantasy')">Fantasy</a></li>
+                <li><a href="#" onclick="filterBooks('Mystery')">Mystery</a></li>
+                <li><a href="#" onclick="filterBooks('Romance')">Romance</a></li>
+                <li><a href="#" onclick="filterBooks('Biography')">Biography</a></li>
+                <li><a href="#" onclick="filterBooks('Self-help')">Self-help</a></li>
+                <li><a href="#" onclick="filterBooks('Children')">Children</a></li>
+            </ul>
+        </section>
+
+        <section id="book-list">
+            <h2>Books</h2>
+            <div id="books"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

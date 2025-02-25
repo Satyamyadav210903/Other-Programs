@@ -1,0 +1,357 @@
+
+body{
+    padding: 0px 20px;
+}
+
+
+:root{
+    --primary-text-color: darkcyan;
+    --secondry-text-color: cadetblue;
+    --accent-color: cadetblue;
+    --accent-color-dark: darkcyan;
+    --padding-inline-section: 20px;
+    --background-color: darkslategrey;
+}
+
+
+ul{
+    color:red;
+    list-style: none;
+    text-align: end;
+}
+a{
+    color: cadetblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 24px;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--primary-text-color);
+}
+h2{
+    color:cornsilk;
+    font-size: 2.7rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondry-text-color);
+    line-height: 1.8rem;
+}
+
+
+
+
+
+
+/*nav Section*/
+
+nav{
+    background-color: darkslategrey;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+    justify-content: end;
+    align: right;
+    margin-left: 20%;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 10px;
+}
+
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.2 ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+.search-box{
+    font-weight: 500;
+    padding: 12px 10px;
+    box-shadow: 0 0 2px var(--secondry-text-color);
+    transition: 0.2s ease-out;
+}
+.search-button{
+    background-color: darkcyan;
+    font-weight: 500;
+    color: white !important;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px var(--secondry-text-color);
+    transition: 0.2s ease-out;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondry-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+
+}
+.secondry-button{
+    border: 0.5px solid var(--secondry-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondry-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+
+}
+
+
+
+
+
+
+/* header section*/
+
+.top-banner{
+    background-color: #4fb3d4;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+header{
+    padding: 50px var(--padding-inline-section);
+}
+.header-section{
+    justify-content: center;
+    gap: 50px
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-button{
+    margin: 20px;
+    background-color: var(--accent-color-dark);
+}
+.get-started-button:hover{
+    background-color: var(--background-color);
+}
+.header-right img{
+    height: 250px;
+}
+
+
+
+
+
+/* features section */
+.Books-explore-section{
+    padding: 20px;
+    padding-top: none;
+}
+.books-collection img{
+    height: 150px;
+    width: 10vw;
+}
+.collection-of-books{
+    background-color: var(--background-color);
+    padding: 20px;
+}
+.collection-of-books{
+    gap: 2%;
+}
+.Books-explore-section h3{
+    height: 5px;
+    text-decoration: red underline;
+}
+.card{
+    padding: 5px 5px;
+    height: 285px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.card h5{
+    height: 30px;
+    font-size: 1rem;
+    text-decoration: red underline;
+}
+.card h5:hover{
+    color: red;
+}
+
+.download-button{
+    height: 25px;
+    border: 0.5px solid var(--secondry-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.download-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+    background-color: var(--background-color);
+}
+
+
+
+
+
+
+
+
+/* Book type section*/
+.small-bold-text{
+    padding: 3px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+.small-bold-text h3{
+    color: white;
+    justify-content: center;
+}
+.category{
+    padding: 20px;
+    background-color: var(--background-color);
+    gap: 20%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+.type{
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: white;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 0.5px solid var(--secondry-text-color);
+    border-radius: 6px;
+}
+.book img{
+    width: 40vw;
+    height: 32vh;
+}
+.type p{
+    color: gray;
+}
+.category h3{
+    color: var(--background-color);
+}
+.type a:hover{
+    background-color: var(--background-color);
+    font-weight: 400;
+}
+.type h5{
+    text-decoration: underline;
+}
+.type h5:hover{
+    color: red;
+}
+
+
+
+.explore-button{
+    border: 0.5px solid var(--secondry-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    background-color: white;
+}
+.explore-button:hover{
+    border-color: var(--accent-color);
+    color: white !important;
+    background-color: var(--background-color);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section*/
+footer{
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.link-column{
+    align-items: flex-start;
+    flex-direction: column;
+}
+.link-column a{
+    color: white;
+}
+.link-column a:hover{
+    color: yellow;
+}
+
+
+/* sub footer*/
+.sub-footer{
+    margin: 20px;
+    margin-bottom: 0px;
+    padding-top: 0;
+    margin-top: 0px;
+    border: 5px solid yellow;
+    background-color: var(--background-color);
+    padding: var(--padding-inline-section);
+}
+.sub-footer-container{
+    padding-top: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 30px;
+}
+.sub-footer-container a{
+    color: white;
+}
+.sub-footer-container a:hover{
+    color: yellow;
+}

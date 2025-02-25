@@ -1,0 +1,51 @@
+body{
+    justify-content: center;
+    align-items: center;
+    padding: 10% 30%;
+
+}
+
+:root{
+    --primary-text-color: darkcyan;
+    --secondry-text-color: cadetblue;
+    --accent-color: cadetblue;
+    --accent-color-dark: darkcyan;
+    --padding-inline-section: 20px;
+    --background-color: darkslategrey;
+}
+
+.container{
+    border-radius: 14px;
+    background-color: var(--accent-color);
+    text-align: end;
+    padding: 5px;
+    justify-content: center;
+    gap: 20px;
+}
+.cut{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--background-color);
+    align: end;
+    width: 5px;
+    height: 10px;
+    padding: 2px;
+    background-color: white;
+}
+form{
+    text-align: center;
+    padding: 10px;
+}
+form input{
+    margin-bottom: 20px;
+    border-radius: 14px;
+    padding: 10px;
+    width: 50%;
+}
+.primary-button{
+    background-color: var(--background-color);
+    color: white;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
