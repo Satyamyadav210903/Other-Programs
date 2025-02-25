@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script ln="js">
+document.getElementById("menuBtn").addEventListener("click", function() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+});
+
+</script>
+<style>
+    .menu {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust according to your layout */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu ul li:hover {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+
+    <button id="menuBtn">Menu</button>
+
+    <div id="menu" class="menu">
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

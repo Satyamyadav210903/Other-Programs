@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  /* Global Styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  .menus {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .menu-item {
+    margin: 0 10px;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  .search-icon,
+  .cart-icon {
+    margin-right: 10px;
+  }
+  /* Hero Section Styles */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+  }
+  .hero-left,
+  .hero-right {
+    flex-basis: 45%;
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .hero-right img {
+    width: 100%;
+    height: auto;
+  }
+  /* Service Overview Section */
+  .service-overview {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <div class="menus">
+    <nav class="menu-items">
+      <a href="#" class="menu-item">Home</a>
+      <a href="#" class="menu-item">Products</a>
+      <a href="#" class="menu-item">About Us</a>
+      <a href="#" class="menu-item">Contact</a>
+    </nav>
+  </div>
+  <div class="icons">
+    <img src="search-icon.png" alt="Search" class="search-icon">
+    <img src="cart-icon.png" alt="Cart" class="cart-icon">
+    <img src="profile-picture.png" alt="Profile" class="profile-picture">
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-left">
+      <h1>Welcome to Our Shoe Store</h1>
+      <p>Explore our latest collection and step into style!</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="sneaker-image.jpg" alt="Sneaker">
+  </div>
+</section>
+
+<!-- Service Overview Section -->
+<section class="service-overview">
+  <div class="container">
+    <p>2k+ Reviews | 30k+ Customers | 4.5/5 Rating | High Quality</p>
+  </div>
+</section>
+
+</body>
+</html>

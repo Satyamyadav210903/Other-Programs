@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            color: whitesmoke;
+            backdrop-filter: blur(15px);
+            background: transparent;
+            background: linear-gradient(
+            180deg,transparent, #00fffc);
+            padding: 20px;        
+            border: 2px solid #625d5d;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .input-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #e6e2e2;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="input-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <div class="input-group">
+            <label for="from">From:</label>
+            <select id="from">
+                <option value="usd">US Doller (USD)</option>
+                <option value="inr">Indian Ruppee (INR)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="gbp">British Pound (GBP)</option>
+                <option value="jpy">Japanese Yen (JPY)</option>
+                <option value="aud">AustaLIan Doller (AUD)</option>
+                <option value="cad">Canadian Doller (CAD)</option>
+                <option value="chf">Swiss Franc (CHF)</option>
+                <option value="brl">Brazilian Real (BRL)</option>
+                <option value="mxn">Maxican Peso (MXN)</option>
+                <option value="zar">South African Rand (ZAR)</option>
+                <option value="rub">Rusian Ruble (RUB)</option>
+                <option value="try">Turkish Lira (TRY)</option>
+                <option value="sgd">Singapore Doller (SGD)</option>
+                <option value="hkd">Hong Kong Doller (HKD)</option>
+                <option value="krw">South Korean Won (KRD)</option>
+                <option value="nzd">New Zealand Doller (NZD)</option>
+                <option value="nok">Narwegion Krone (NOK)</option>
+                <option value="sek">Swedish Krona(SEK)</option>
+                <option value="dkk">Danish Krone (DKK)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="to">To:</label>
+            <select id="to">
+                <option value="usd">US Doller (USD)</option>
+                <option value="inr">Indian Ruppee (INR)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="gbp">British Pound (GBP)</option>
+                <option value="jpy">Japanese Yen (JPY)</option>
+                <option value="aud">AustaLIan Doller (AUD)</option>
+                <option value="cad">Canadian Doller (CAD)</option>
+                <option value="chf">Swiss Franc (CHF)</option>
+                <option value="brl">Brazilian Real (BRL)</option>
+                <option value="mxn">Maxican Peso (MXN)</option>
+                <option value="zar">South African Rand (ZAR)</option>
+                <option value="rub">Rusian Ruble (RUB)</option>
+                <option value="try">Turkish Lira (TRY)</option>
+                <option value="sgd">Singapore Doller (SGD)</option>
+                <option value="hkd">Hong Kong Doller (HKD)</option>
+                <option value="krw">South Korean Won (KRD)</option>
+                <option value="nzd">New Zealand Doller (NZD)</option>
+                <option value="nok">Narwegion Krone (NOK)</option>
+                <option value="sek">Swedish Krona(SEK)</option>
+                <option value="dkk">Danish Krone (DKK)</option>
+            </select>
+        </div>
+        <button class="btn" onclick="convert()">Convert</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function convert() {
+            const amount = document.getElementById('amount').value;
+            const from = document.getElementById('from').value;
+            const to = document.getElementById('to').value;
+
+            // Here you would normally call an API to get the conversion rate and calculate the result,
+            // but for simplicity, let's just display a static result
+            const conversionRates = {
+                // Define conversion rates for each currency pair here
+                'usd': 1,
+                'eur': 0.85, 
+                'gbp': 0.73, 
+                'jpy': 110.17,
+                'aud': 1.30,
+                'cad': 1.25,
+                'chf': 0.91,
+                'Cny':0.16,
+                'inr':0.014,
+                'brl':0.18,
+                'mxn':0.050,
+                'zar':0.067,
+                'rub':0.013,
+                'try':0.12,
+                'sgd':0.73,
+                'hkd':0.13,
+                'krw':0.00089,
+                'nzd':0.71,
+                'nok':0.11,
+                'sek':0.12,
+                'dkk':0.16
+
+            };
+
+            const result = amount * (conversionRates[from] / conversionRates[to]);
+
+            document.getElementById('result').innerText = `${amount} ${from.toUpperCase()} = ${result.toFixed(5)} ${to.toUpperCase()}`;
+        }
+    </script>
+</body>
+</html>

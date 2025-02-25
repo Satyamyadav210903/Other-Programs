@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Resetting default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .navbar-logo {
+            /* Your logo styles */
+        }
+
+        .navbar-menus {
+            /* Your menu styles */
+        }
+
+        .navbar-icons {
+            /* Your icons styles */
+        }
+
+        /* Shopping cart section styles */
+        .shopping-cart {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .shopping-left {
+            flex: 1;
+            /* Your styles */
+        }
+
+        .shopping-right {
+            flex: 1;
+            /* Your styles */
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            /* Your styles */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            /* Your styles */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* Your styles */
+        }
+
+        /* Descriptive card styles */
+        .descriptive-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            /* Your styles */
+        }
+
+        /* Bottom container styles */
+        .bottom-container {
+            text-align: center;
+            margin-top: 20px;
+            /* Your styles */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-logo">Logo</div>
+        <div class="navbar-menus">Menus</div>
+        <div class="navbar-icons">
+            <span>Search Icon</span>
+            <span>Cart Icon</span>
+            <span>Profile Picture</span>
+        </div>
+    </div>
+
+    <!-- Shopping cart section -->
+    <div class="shopping-cart">
+        <!-- Left container -->
+        <div class="shopping-left">
+            <h2>Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add table rows dynamically based on cart items -->
+                    <tr>
+                        <td>Product Name</td>
+                        <td>1</td>
+                        <td>$XX.XX</td>
+                        <td><button>Remove</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right container -->
+        <div class="shopping-right">
+            <div class="descriptive-card">
+                <h3>Apply Coupon</h3>
+                <input type="text" placeholder="Enter coupon code">
+                <button>Apply Coupon</button>
+            </div>
+            <div>
+                <p>Sub Total: $XX.XX</p>
+                <p>Taxes: $XX.XX</p>
+                <p>Discount: $XX.XX</p>
+                <h3>Total: $XX.XX</h3>
+                <button>Pay Now</button>
+                <!-- Razorpay icons here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom container -->
+    <div class="bottom-container">
+        <a href="#">Continue Shopping</a>
+    </div>
+
+</body>
+</html>
+s

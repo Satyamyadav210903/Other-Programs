@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        /* Resetting default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .navbar-logo {
+            /* Your logo styles */
+        }
+
+        .navbar-menus {
+            /* Your menu styles */
+        }
+
+        .navbar-icons {
+            /* Your icons styles */
+        }
+
+        /* Product display section styles */
+        .product-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+        }
+
+        .product-main {
+            flex: 1;
+            /* Your styles */
+        }
+
+        .product-info {
+            flex: 1;
+            /* Your styles */
+        }
+
+        .product-bottom-gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            /* Your styles */
+        }
+
+        .product-bottom-gallery img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            /* Your styles */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-logo">Logo</div>
+        <div class="navbar-menus">Menus</div>
+        <div class="navbar-icons">
+            <span>Search Icon</span>
+            <span>Cart Icon</span>
+            <span>Profile Picture</span>
+        </div>
+    </div>
+
+    <!-- Product display section -->
+    <div class="product-display">
+        <!-- Main Display Section -->
+        <div class="product-main">
+            <img src="main_product_image.jpg" alt="Main Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Shoe Product Name</h2>
+            <p>Description</p>
+            <p>Price: $XX.XX</p>
+            <p>Sale details</p>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Bottom Gallery Section -->
+    <div class="product-bottom-gallery">
+        <img src="gallery_image1.jpg" alt="Gallery Image 1">
+        <img src="gallery_image2.jpg" alt="Gallery Image 2">
+        <img src="gallery_image3.jpg" alt="Gallery Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+</body>
+</html>
